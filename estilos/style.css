@@ -4,10 +4,188 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,  
+ Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#tela {
-    background-color: aqua;
-    width: 50vw;
+:root {
+    --fundo: #5f2c82;
+    --destaque: #49a09d;
+}
+
+body, html {
+    background-color: #1e1e1e;
     height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.453);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    -webkit-transition: width .3s, height .3s;
+    -moz-transition: width .3s, height .3s;
+    -ms-transition: width .3s, height .3s;
+    -o-transition: width .3s, height .3s;
+
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #008080 url(../imagens/148159-Cthulhu-artwork-creature-horror-simple-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+ h1 {
+    text-align: center;
+    margin-bottom: 10px;   
+}
+
+p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+div.campo > input {
+    background-color: #205957;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 2px;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > div.campo {
+    background-color: #072423;
+    border: 2px solid #072423;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+#campo2 {
+    margin-bottom: 20px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    background-color: #1e1e1e;
+    color: #49a09d;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+form > input[type=submit]:hover {
+    background-color: #49a09d;
+    color: #1e1e1e;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: #343333;
+    border: 1px solid #343333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-decoration: none;
+    color: #49a09d;
+    margin-top: 7px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+form > a.botao:hover {
+    background-color: white;
+    color: #343333;
+}
+
+form > a.botao > i {
+    font-size: 0.8em;
+}
+
+.login-icons {
+    display: none;
 }
