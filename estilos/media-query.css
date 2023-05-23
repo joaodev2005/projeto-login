@@ -4,9 +4,11 @@
 
     body {
         background-image: linear-gradient(to top,  #000000,  #1e1e1e, #008080);
+        overflow-x: hidden;
     }
     section#login {
         width: 80vw;
+        height: 390px;
     }
 
     section#login > div#imagem {
@@ -20,12 +22,46 @@
         width: 60%;
     }
 
-    .socials {
+    .login-icons {
         display: block;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        top: 313px;
+        left: 130px;
+        width: 100%;
     }
-    
-    .redes {
 
+    .login-icons img {
+        width: 30px;
+    }
+
+    .icons-button {
+        width: 9.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .login-icons .icons-button:nth-child(1) {
+        background-color: #3b5998;
+    }
+
+    .login-icons .icons-button:nth-child(2) {
+        background-color: lightgrey;
+    }
+
+    .login-icons .icons-button:nth-child(3) {
+        background-color: black;
     }
 }
 
@@ -37,6 +73,7 @@
 
     section#login {
         width: 950px;
+        height: 400px;
     }
 
     section#login > div#imagem {
@@ -62,6 +99,43 @@
     .login-icons {
         display: block;
         display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 330px;
+        left: -240px;
         gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .login-icons img {
+        width: 20px;
+    }
+
+    .icons-button {
+        width: 9.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .login-icons .icons-button:nth-child(1) {
+        background-color: #3b5998;
+    }
+
+    .login-icons .icons-button:nth-child(2) {
+        background-color: lightgrey;
+    }
+
+    .login-icons .icons-button:nth-child(3) {
+        background-color: black;
     }
 }
